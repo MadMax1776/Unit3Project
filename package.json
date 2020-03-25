@@ -22,5 +22,6 @@
     "mongo": "^0.1.0",
     "mongod": "^2.0.0",
     "mongoose": "^5.9.6"
-  }
+  },
+  "devDependencies": {}
 }
