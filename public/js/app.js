@@ -1,7 +1,8 @@
 const app = angular.module('WonderApp', []);
 
-app.controller('MyController', ['$http', function($http) {
-  this.title = null;
+
+ app.controller('MyController',['$http', function($http){
+  this.title = 'Wonders of the world';
 
 const controller = this;
 
@@ -21,7 +22,6 @@ const controller = this;
           }
       )
   };
-
 
   this.getWonder = function(){
     $http({
