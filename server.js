@@ -1,15 +1,25 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
+const session = require('express-session');
 
 app.use(express.json());
 app.use(express.static('public'))
 
+app.use(session({
+    secret:'feedmeseymour',
+    resave:false,
+    saveUninitialized:false
+}))
+
 const sessionController = require('./controllers/session.js');
-app.use('/wonder', sessionController)
+app.use('/session', sessionController)
+
+const wonderController = require('./controllers/wonders.js');
+app.use('/wonder', wonderController);
 
 mongoose.connect(
-    'mongodb://localhost:27017/meancrud',
+    'mongodb://localhost:27017/wonder',
     {
         useNewUrlParser: true,
         useUnifiedTopology: true

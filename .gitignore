@@ -1,4 +1,7 @@
+<<<<<<< HEAD
+=======
 
+>>>>>>> f002abca19176e6c805d6cc74255300ab6185ca0
 # Compiled source #
 ###################
 *.com
@@ -43,7 +46,10 @@ Thumbs.db
 # Node/npm #
 ##############
 node_modules
+<<<<<<< HEAD
+=======
 
+>>>>>>> f002abca19176e6c805d6cc74255300ab6185ca0
 .env
 
 # Sass #
