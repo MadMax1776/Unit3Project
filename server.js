@@ -13,7 +13,10 @@ app.use(session({
 }))
 
 const sessionController = require('./controllers/session.js');
-app.use('/wonder', sessionController)
+app.use('/session', sessionController)
+
+const wonderController = require('./controllers/wonder.js');
+app.use('/wonder', wonderController);
 
 mongoose.connect(
     'mongodb://localhost:27017/wonder',
