@@ -2,7 +2,7 @@ const app = angular.module('WonderApp', []);
 
 
  app.controller('MyController',['$http', function($http){
-  this.title = 'Wonders of the world';
+  this.name = null;
 
 const controller = this;
 
@@ -11,7 +11,11 @@ const controller = this;
           method: 'POST',
           url:'/wonder',
           data: {
-              title: this.title
+            name: this.name,
+          	description: this.description,
+          	country: this.country,
+          	latitude: this.latitude,
+          	longitude: this.longitude
           }
       }).then(
           function(response) {
