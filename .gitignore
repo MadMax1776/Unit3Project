@@ -1,3 +1,4 @@
+
 # Compiled source #
 ###################
 *.com
@@ -42,6 +43,7 @@ Thumbs.db
 # Node/npm #
 ##############
 node_modules
+
 .env
 
 # Sass #
