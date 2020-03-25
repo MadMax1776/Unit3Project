@@ -1,6 +1,6 @@
 {
   "name": "unit3project",
-  "version": "1.0.0",
+  "version": "12.14.1",
   "description": "Unit 3 Project at General Assembly",
   "main": "server.js",
   "scripts": {
