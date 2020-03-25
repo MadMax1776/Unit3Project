@@ -18,6 +18,9 @@ app.use('/session', sessionController)
 const wonderController = require('./controllers/wonders.js');
 app.use('/wonder', wonderController);
 
+const usersController = require('./controllers/users.js');
+app.use('/users', usersController);
+
 mongoose.connect(
     'mongodb://localhost:27017/wonder',
     {
