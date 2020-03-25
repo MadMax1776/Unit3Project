@@ -27,21 +27,29 @@
       <input type="submit"value="Login">
     </form><br>
 
-
+    <section>
+      <h2>Welcome!!</h2>
 
       <div>
-        Search: <input type="text" placeholder="Search Wonders">
+        <form ng-submit="ctrl.createWonder()">
+
+        Search: <input type="text" ng-model="ctrl.name" placeholder="Search Wonders">
         <input type="submit" value="Search">
+        </form>
       </div> <br>
 
-     <h2>Your list of Wonders</h2>
+     <h3>Your list of Wonders</h3>
       <div>
           <ul>
-            <li>
-              ITEMS GO HERE
+            <li ng-repeat="wwe in ctrl.wwe">
+              {{wwe.name}}
+              {{wwe.description}}
+              {{wwe.country}}
+              {{wwe.latitude}}
+              {{wwe.longitude}}
             </li>
           </ul>
       </div>
-
+  </section>
 </body>
 </html>
