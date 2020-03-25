@@ -5,7 +5,8 @@ const app = express();
 app.use(express.json());
 app.use(express.static('public'))
 
-
+const sessionController = require('./controllers/session.js');
+app.use('/wonder', sessionController)
 
 mongoose.connect(
     'mongodb://localhost:27017/meancrud',
